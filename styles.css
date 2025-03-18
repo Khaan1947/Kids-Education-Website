@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    padding: 15px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Image Section (Responsive Fix) */
+.image-section img {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Content */
+.content {
+    padding: 20px;
+}
+
+h2 {
+    color: #ff6600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Buttons (Fixed for Touch Screens) */
+button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s, background 0.3s;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+}
+
+/* Mobile Adjustments */
+@media (min-width: 600px) {
+    .button-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
